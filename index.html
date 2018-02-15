@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Find Me</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+	<h1 class="tit text-center">Find Me<span class="mapIcon glyphicon glyphicon-map-marker"></span></h1>
+												
+	<button onclick="getLocation()" class="btn btn-danger btn-block">Where Am I?</button>
+	</div>
+	
+	<div class="map img-rounded" id="googleMap">
+	
+	</div>
+	<div class="ico">
+	<p onclick="getLocation()" class="text-center"><i id="mark" class="fa fa-map-marker fa-5x" aria-hidden="true"></i></p>
+	</div>
+	<div class="info">
+	<h3 class="text-center">According to me, you are here : <span id="loc"></span></h3>
+	</div>
+	<!--<p>Longitude :<span id="lon"></span></p>
+	<p>Latitude  :<span id="lat"></span></p>
+	<a href="https://support.google.com/maps/answer/2839911?hl=en&visit_id=1-636099681111864909-2291789525&rd=1" target="_blank"><button class="btn btn-warning">Not Correct?</button></a>-->
+	<div class="but">
+	<a href="https://support.google.com/maps/answer/2839911?hl=en&visit_id=1-636099681111864909-2291789525&rd=1" target="_blank"><button type="button" class="correct btn-lg btn btn-primary" data-toggle="collapse" data-target="#demo"><span class="wrong glyphicon glyphicon-remove-circle"> </span> Location Not Correct?</button></a>
+	<div id="demo" class="collapse">
+	<p class="text-center">Sometimes google can be wrong.</p>
+	</div>
+	</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://use.fontawesome.com/8842e56892.js'></script>
+<script src='https://maps.googleapis.com/maps/api/js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

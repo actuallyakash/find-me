@@ -1,0 +1,91 @@
+body 
+{
+	background: linear-gradient(90deg, #754d8b 0%, #3f5592 100%);
+	color:white;
+}
+
+#mark:hover
+{
+	color:tomato;
+	cursor:pointer;
+}
+.ico
+{
+    margin-top: 4px;
+}
+#mark
+{
+	position:absolute;
+	top:30%;
+	right:25%;
+    font-size: 300px;
+	width:50%;
+}
+
+#loc
+{
+	font-family: 'Indie Flower', cursive;
+	font-size : 33px;
+	color:lightgreen;
+}
+.but
+{
+    margin-top: 4px;
+    text-align: center;
+}
+.correct
+{
+    cursor: pointer;
+    font-size: 200%;
+    text-align: center;
+}
+.wrong
+{
+	font-size:20px;
+	color:red;
+}
+.correct
+{
+	margin:0 auto;
+	font-size:20px;
+	padding:12px;
+}
+#demo
+{
+	font-size:33px;
+	color:red;
+}
+.mapIcon
+{
+	color : red;
+	font-size:53px;
+}
+
+.tit
+{
+	font-family: 'Indie Flower', cursive;
+	color:white;
+	font-size:53px;
+	margin-top:8px;
+}
+
+.map
+{
+	width:1300px;
+	height:400px;
+	margin:0 auto;
+	margin-top:20px;
+	z-index:1;
+}
+/*bouncing effect*/
+@keyframes bounce {
+    0%   {margin-top: 0px;}
+    50%  {margin-top: 20px;}
+    100% {margin-top: 0px;}
+}
+i{
+  display: inline-block;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
